@@ -24,6 +24,8 @@
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
                   &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
                         >;
+                        sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
@@ -52,5 +54,13 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
+        };
+};
+
+/ {
+        sensors {
+                compatible = "zmk,keymap-sensors";
+                sensors = <&encoder_1>;
+                trigers-per-rotation = <20>
         };
 };
