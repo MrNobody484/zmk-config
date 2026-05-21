@@ -11,8 +11,9 @@
 &led_strip {
     chain-length = <21>;
 };
-&studio_unlock
+
 / {
+        &studio_unlock
         keymap {
                 compatible = "zmk,keymap";
 
