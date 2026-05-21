@@ -28,7 +28,7 @@
         reg = <0>;
         spi-max-frequency = <4000000>;
 
-        chain-length = <42>; /* 42 per-key LEDs + underglow if installed */
+        chain-length = <21>; /* 21 per-key LEDs + underglow if installed */
         spi-one-frame = <0x70>;
         spi-zero-frame = <0x40>;
 
