@@ -13,7 +13,6 @@
 };
 
 / {
-        &studio_unlock
         keymap {
                 compatible = "zmk,keymap";
 
@@ -61,3 +60,5 @@
                 };
         };
 };
+
+&studio_unlock;
