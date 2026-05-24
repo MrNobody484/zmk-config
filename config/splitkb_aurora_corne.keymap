@@ -33,6 +33,11 @@
             bindings = <&tog 3>;
             key-positions = <37 40>;
         };
+
+        del {
+            bindings = <&kp DEL>;
+            key-positions = <9 10>;
+        };
     };
 
     keymap {
